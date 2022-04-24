@@ -1,0 +1,11 @@
+.heavenlyBody{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #ffff77;
+    box-shadow: 0 0 50px #ffff77;
+}
