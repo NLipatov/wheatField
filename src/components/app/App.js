@@ -8,15 +8,11 @@ function App() {
   const {currentTime, secondsSinceMidnightTime, dayPercentage, heightPercentage} = dateService();
   return (
     <div className="App">
-      {/* <span>
-      X: {dayPercentage()}%
-      Y: {heightPercentage()}%
-      </span> */}
       <HeavenlyBody 
       xCoord={dayPercentage()}
       yCoord={heightPercentage()}/>
-      <Clouds/>
-      <Field/>
+      <Clouds dayProgress={dayPercentage()}/>
+      <Field dayProgress={dayPercentage()}/>
     </div>
   );
 }

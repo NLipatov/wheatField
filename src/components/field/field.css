@@ -1,6 +1,12 @@
 .wheatField {
-    bottom: -12vh;
+    bottom: -22vh;
     position: absolute;
     left: 0;
     width: 100vw;
+}
+.night{
+    filter: brightness(0.5);
+}
+.day{
+    filter: brightness(1);
 }
