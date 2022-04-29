@@ -4,9 +4,9 @@
     left: 0;
     width: 100vw;
 }
-.night{
+.nightField{
     filter: brightness(0.5);
 }
-.day{
+.dayField{
     filter: brightness(1);
 }

@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <HeavenlyBody 
+      dayProgress={dayPercentage()}
       xCoord={dayPercentage()}
       yCoord={heightPercentage()}/>
       <Clouds dayProgress={dayPercentage()}/>

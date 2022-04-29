@@ -3,10 +3,10 @@ import './clouds.css';
 const Clouds = ({dayProgress}) => {
     const getCloudsClassName = (dayProgress) => {
         if(dayProgress > 80 || dayProgress < 20){
-            return 'wheatField night';
+            return 'night';
         }
         else{
-            return 'wheatField day';
+            return 'day';
         }
     }
     const cloudsClassName = getCloudsClassName(dayProgress);

@@ -9,3 +9,10 @@
     background: #ffff77;
     box-shadow: 0 0 50px #ffff77;
 }
+
+.dayHeavenlyBody{
+    filter: brightness(1);
+}
+.nightHeavenlyBody{
+    filter: contrast(30) hue-rotate(215deg);
+}

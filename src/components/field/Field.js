@@ -7,15 +7,15 @@ import React, {useEffect} from 'react';
 const Field = ({dayProgress}) => {
     const getWheatClassName = (dayProgress) => {
         if(dayProgress > 80 || dayProgress < 20){
-            return 'wheatField night'
+            return 'wheatField nightField';
         }
         else{
-            return 'wheatField day'
+            return 'wheatField dayField';
         }
     }
 
 
-    
+
     const wheatClassName = getWheatClassName(dayProgress);
     return (
         <>
