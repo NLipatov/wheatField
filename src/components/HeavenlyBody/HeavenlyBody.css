@@ -8,6 +8,7 @@
     bottom: 0;
     background: #ffff77;
     box-shadow: 0 0 50px #ffff77;
+    transition: all 3s ease 0s;
 }
 
 .dayHeavenlyBody{
