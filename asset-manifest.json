@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/wheatField/static/css/main.d6c1508d.css",
-    "main.js": "/wheatField/static/js/main.20d7a85a.js",
+    "main.css": "/wheatField/static/css/main.caed0fd0.css",
+    "main.js": "/wheatField/static/js/main.6baaa088.js",
     "static/js/787.9c177dc6.chunk.js": "/wheatField/static/js/787.9c177dc6.chunk.js",
     "static/media/pngegg.png": "/wheatField/static/media/pngegg.41ca8f8c0dcbc3fd8567.png",
     "index.html": "/wheatField/index.html",
-    "main.d6c1508d.css.map": "/wheatField/static/css/main.d6c1508d.css.map",
-    "main.20d7a85a.js.map": "/wheatField/static/js/main.20d7a85a.js.map",
+    "main.caed0fd0.css.map": "/wheatField/static/css/main.caed0fd0.css.map",
+    "main.6baaa088.js.map": "/wheatField/static/js/main.6baaa088.js.map",
     "787.9c177dc6.chunk.js.map": "/wheatField/static/js/787.9c177dc6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6c1508d.css",
-    "static/js/main.20d7a85a.js"
+    "static/css/main.caed0fd0.css",
+    "static/js/main.6baaa088.js"
   ]
 }
