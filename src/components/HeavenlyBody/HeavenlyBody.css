@@ -27,8 +27,14 @@
 .dayHeavenlyBody{
     filter: brightness(1);
 }
+.dayHeavenlyBody > img {
+    display: none;
+}
 .nightFallHeavenlyBody{
     filter: contrast(30) hue-rotate(215deg);
+}
+.nightFallHeavenlyBody > img {
+    display: none;
 }
 
 .nightHeavenlyBody {
@@ -45,4 +51,5 @@
     z-index: 0;
     box-shadow: 0 0 50px white;
     border-radius: 50%;
+    color: transparent;
 }
