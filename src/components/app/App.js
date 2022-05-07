@@ -14,8 +14,8 @@ function App() {
     }, 10000);
   };
 
-  const progressObject = getProgressObject(); 
-  // const progressObject = getManualProgressObject(getTime); 
+  // const progressObject = getProgressObject(); 
+  const progressObject = getManualProgressObject(95); 
 
   updater();
 

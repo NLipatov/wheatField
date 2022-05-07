@@ -1,4 +1,5 @@
 import './HeavenlyBody.css';
+import moon from './moon.png';
 
 const HeavenlyBody = ({progressObject}) => {
     const getNightHeight = (percentage) => {
@@ -67,10 +68,7 @@ const HeavenlyBody = ({progressObject}) => {
             <span className={heavenlyBodyState.heavenlyBodyClass} 
             style={{marginLeft: `calc(-75px + ${heavenlyBodyState.progress}vw)`, 
             marginBottom: `calc(-150px + ${heavenlyBodyState.yCoord}vh)`}}>
-            </span>
-            <span className={heavenlyBodyState.craterClass}
-            style={{marginLeft: `calc(-75px + ${heavenlyBodyState.progress}vw)`, 
-            marginBottom: `calc(-150px + ${heavenlyBodyState.yCoord}vh)`}}>
+                <img src={moon}/>
             </span>
         </>
     )
