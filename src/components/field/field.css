@@ -6,7 +6,7 @@
     z-index: 2;
 }
 .nightField{
-    filter: brightness(0.5);
+    filter: brightness(0.01);
 }
 .dayField{
     filter: brightness(1);
