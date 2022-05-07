@@ -11,9 +11,36 @@
     transition: all 3s ease 0s;
 }
 
+.crater {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+    background: black;
+    transition: all 1s ease 0s;
+    z-index: 1;
+}
+
 .dayHeavenlyBody{
     filter: brightness(1);
 }
-.nightHeavenlyBody{
+.nightFallHeavenlyBody{
     filter: contrast(30) hue-rotate(215deg);
+}
+
+.nightHeavenlyBody {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: white;
+    box-shadow: none;
+    transition: all 3s ease 0s;
+    z-index: 1;
 }
