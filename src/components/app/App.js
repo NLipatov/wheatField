@@ -3,10 +3,11 @@ import dateService from '../../services/dateService';
 import HeavenlyBody from '../HeavenlyBody/HeavenlyBody';
 import Field from '../field/Field';
 import Clouds from '../clouds/Clouds';
+import TimeBadge from '../timeBadge/TimeBadge';
 import React, {useEffect, useState} from 'react';
 
 function App() {
-  const {getProgressObject, getManualProgressObject} = dateService();
+  const {getProgressObject, getManualProgressObject, currentTime} = dateService();
   const [getTime, setTime] = useState(1);
   const updater = () => {
     setTimeout(() =>{
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <div className="App">
+      <TimeBadge CurrentTime={currentTime()}/>
       <HeavenlyBody 
       progressObject={progressObject}/>
       <Clouds dayProgress={progressObject.progress}/>

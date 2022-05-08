@@ -1,5 +1,9 @@
 export const useTime = () => {
-    const getCurrentTime = () => "15:00";
+    const getCurrentTime = () => {
+        const now = new Date();
+        const current = now.getHours() + ':' + now.getMinutes();
+        return current;
+    }
 
     const secondsSinceMidnight = () => {
         const newDate = new Date();

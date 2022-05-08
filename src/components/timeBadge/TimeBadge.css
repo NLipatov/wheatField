@@ -1,0 +1,17 @@
+.timeBadgeBody {
+    position: sticky;
+    background: white;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-shadow: 0 0 black;
+    box-shadow: 0px 0px 10px 5px lightgrey;
+    z-index: 100;
+}
+.timeSpan{
+    padding: 2px 0 2px 0;
+}
