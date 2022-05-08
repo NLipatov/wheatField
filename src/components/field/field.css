@@ -11,3 +11,14 @@
 .dayField{
     filter: brightness(1);
 }
+
+@media (max-width: 1100px){
+    .wheatField {
+        bottom: 0;
+    }
+}
+@media (max-height: 500px){
+    .wheatField {
+        bottom: -100px;
+    }
+}
