@@ -1,7 +1,9 @@
 export const useTime = () => {
     const getCurrentTime = () => {
         const now = new Date();
-        const current = now.getHours() + ':' + now.getMinutes();
+        const hour = now.getHours()
+        const minutes = now.getMinutes().toString().padStart(2, "0");
+        const current = `${hour}:${minutes}`;
         return current;
     }
 
