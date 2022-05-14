@@ -1,6 +1,6 @@
 import './field.css';
 import wheatField from './pngegg.png';
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 
 
 
@@ -14,6 +14,14 @@ const Field = ({dayProgress, fieldImageLoaded}) => {
         }
     }
 
+    const fieldImage = useRef();
+
+    useEffect(()=>{
+        if(fieldImage.current.complete){
+            fieldImageLoaded();
+        }
+    }, [])
+
 
 
     const wheatClassName = getWheatClassName(dayProgress);
@@ -22,6 +30,7 @@ const Field = ({dayProgress, fieldImageLoaded}) => {
         <img src={wheatField} 
         className={wheatClassName}
         alt="wheat field"
+        ref={fieldImage}
         onLoad={fieldImageLoaded}
         />
     </>

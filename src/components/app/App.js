@@ -24,7 +24,6 @@ function App() {
   const hideLoadingScreen = useRef(null);
 
   const fieldImageLoaded = () => {
-    console.log('field image was loaded');
     hideLoadingScreen.current();
   }
 

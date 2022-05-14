@@ -9,7 +9,6 @@ const LoadingScreen = ({hideLoadingScreen}) => {
     }, [])
 
     const setOpacityParamToZero = () => {
-        console.log('setOpacityParamToZero called');
         setOpacity(0);
     }
 
