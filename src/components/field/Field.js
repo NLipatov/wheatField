@@ -4,7 +4,7 @@ import React, {useEffect} from 'react';
 
 
 
-const Field = ({dayProgress}) => {
+const Field = ({dayProgress, fieldImageLoaded}) => {
     const getWheatClassName = (dayProgress) => {
         if(dayProgress > 80 || dayProgress < 20){
             return 'wheatField nightField';
@@ -22,6 +22,7 @@ const Field = ({dayProgress}) => {
         <img src={wheatField} 
         className={wheatClassName}
         alt="wheat field"
+        onLoad={fieldImageLoaded}
         />
     </>
     )

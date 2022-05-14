@@ -1,0 +1,16 @@
+.LoadingScreen{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 1000;
+    display: flex;
+    transition: all 1s ease 0s;
+}
+
+.LoadingScreen span {
+    margin: auto;
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 18pt;
+}

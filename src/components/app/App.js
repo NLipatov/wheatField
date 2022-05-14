@@ -4,7 +4,8 @@ import HeavenlyBody from '../HeavenlyBody/HeavenlyBody';
 import Field from '../field/Field';
 import Clouds from '../clouds/Clouds';
 import TimeBadge from '../timeBadge/TimeBadge';
-import React, {useEffect, useState} from 'react';
+import LoadingScreen from '../LoadingScreen/LoadingScreen';
+import React, {useEffect, useState, useRef} from 'react';
 
 function App() {
   const {getProgressObject, getManualProgressObject, currentTime} = dateService();
@@ -20,14 +21,30 @@ function App() {
 
   updater();
 
+  const hideLoadingScreen = useRef(null);
+
+  const fieldImageLoaded = () => {
+    console.log('field image was loaded');
+    hideLoadingScreen.current();
+  }
+
 
   return (
     <div className="App">
-      <TimeBadge CurrentTime={currentTime()}/>
+      <LoadingScreen
+        hideLoadingScreen={hideLoadingScreen}/>
+      <TimeBadge 
+        CurrentTime={currentTime()}/>
+
       <HeavenlyBody 
-      progressObject={progressObject}/>
-      <Clouds dayProgress={progressObject.progress}/>
-      <Field dayProgress={progressObject.progress}/>
+        progressObject={progressObject}/>
+
+      <Clouds 
+        dayProgress={progressObject.progress}/>
+
+      <Field 
+        dayProgress={progressObject.progress}
+        fieldImageLoaded={fieldImageLoaded}/>
     </div>
   );
 }
