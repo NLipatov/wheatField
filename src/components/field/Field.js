@@ -32,7 +32,7 @@ const Field = ({dayProgress, fieldImageLoaded}) => {
         alt="wheat field"
         ref={fieldImage}
         onLoad={fieldImageLoaded}
-        decoding={"sync"}
+        decoding={"async"}
         />
     </>
     )
