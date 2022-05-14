@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/wheatField/static/css/main.ea5cec5d.css",
+    "main.css": "/wheatField/static/css/main.208879d1.css",
     "main.js": "/wheatField/static/js/main.3e4c59a2.js",
     "static/js/787.9c177dc6.chunk.js": "/wheatField/static/js/787.9c177dc6.chunk.js",
     "static/media/pngegg.png": "/wheatField/static/media/pngegg.41ca8f8c0dcbc3fd8567.png",
     "static/media/moon.png": "/wheatField/static/media/moon.1ca675d53ea8435e469f.png",
     "index.html": "/wheatField/index.html",
-    "main.ea5cec5d.css.map": "/wheatField/static/css/main.ea5cec5d.css.map",
+    "main.208879d1.css.map": "/wheatField/static/css/main.208879d1.css.map",
     "main.3e4c59a2.js.map": "/wheatField/static/js/main.3e4c59a2.js.map",
     "787.9c177dc6.chunk.js.map": "/wheatField/static/js/787.9c177dc6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea5cec5d.css",
+    "static/css/main.208879d1.css",
     "static/js/main.3e4c59a2.js"
   ]
 }
