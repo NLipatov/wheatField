@@ -25,6 +25,7 @@ function App() {
 
   const fieldImageLoaded = () => {
     hideLoadingScreen.current();
+    setTime(getTime + 1);
   }
 
 
